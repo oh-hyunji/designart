@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+* {box-sizing: border-box;}
+body {padding: 0; margin: 0; font-family: 'Noto Sans', sans-serif; font-size: 14px; overflow-x: hidden;}
+button {outline: none;}
+h1, h2, h3, h4, h5, h6, p, ul {margin: 0; padding: 0;}
+ul {list-style: none; margin: 0; padding: 0;}
+li, button {cursor: pointer;}
+img {display: block;}
+.pointText {font-family: 'Sansita Swashed', cursive; font-weight: 600;}
+
+/* header */
+#header {width: 100%; position: fixed; top: 0; background: #fff; height: 100px; z-index: 30;}
+#headerBox {width: 100%; height: 100%; max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: center;}
+
+/* logo & menu */
+#logo {width: 30%; font-size: 1.4rem;}
+
+#navi {position: relative; height: 100%; width: 70%; z-index: 1;}
+#naviBox {position: absolute; right: 0; top: 40%; display: flex; flex-wrap: wrap; justify-content: flex-end;}
+#naviBox .menu {width: 100px; text-align: center; transition: .3s; color: #333;}
+#naviBox .menu:last-child {padding-right: 0;}
+#naviBox .menu span {color: #333; font-size: 1.05rem; letter-spacing: -0.03rem;}
+#naviBox .menu:hover span{font-weight: 700; color: #333;}
+
+.slide {display: none; padding-top: 10px;}
+.slide li {padding: 10px 0;}
+.slide li:hover {font-weight: 700; color: #333;}
+.slideBack {display: none; position: absolute; width: 100%; height: 200px; background: #fff; box-shadow: rgba(0, 0, 0, 0.14) 0px 12px 12px;}
+
+/* wrap */
+#wrap {width: 100%; max-width: 1200px; margin: 0 auto; margin-top: 106px;}
+
+/* slide box */
+#slideBox {width: 100%; position: relative;}
+#slideBox img {position: absolute; top: 0; left: 0; width: 100%; height: auto; display: none;}
+#slideMarkBox {position: absolute; right: 0; top: 50%; z-index: 10; padding-right: 20px; transform: translateY(-50%); cursor: pointer;}
+
+.slideMark {width: 15px; height: 15px; background-color: rgba(255, 255, 255, .6); border-radius: 100%; margin: 20px 0;}
+.slideMark:first-child {background-color: #fff;}
+
+.titleBox {position: absolute; width: 60%; top: 50%; transform: translateY(-50%); padding-left: 80px;}
+.titleBox strong {color: #fff; font-size: 4rem;}
+.titleBox p {color: #fff; font-size: 1.1rem; padding-top: 18px;}
+
+/* section*/
+.section {width: 100%;}
+
+/* section A*/
+#secA h2 {margin: 80px 0 70px; font-size: 2rem; text-align: center;}
+#boxA {width: 100%; display: flex; flex-wrap: wrap;}
+
+.infoBoxA {width: 100%; display: flex; justify-content: center; align-items: center; margin-bottom: 80px;}
+.infoBoxA:nth-child(2n) {flex-flow: row-reverse;}
+.infoBoxA:nth-child(2n) .textBoxA {padding-left: 120px;}
+.infoBoxA img {width: 50%;}
+
+.textBoxA {padding: 50px;}
+.textBoxA p:nth-child(1) {font-size: 18px; color: #444;}
+.textBoxA p {font-size: 14px; color: #5d5c5c;}
+.textBoxA h3 {font-size: 3rem; color: #333; padding: 20px 0 0;}
+.textBoxA .lineA {width: 210px; height: 2px; background: #cecece; margin: 40px 0;}
+.textBoxA .last {margin-bottom: 60px;}
+.textBoxA button {padding: 18px 55px; border: none; color: #666; margin-top: 50px; box-shadow: 5px 5px 5px #bbbaba; transition: .3s;}
+.textBoxA button:hover {box-shadow: none;}
+
+/* section B */
+#secB h2 {margin: 30px 0 70px; font-size: 2rem; text-align: center;}
+#boxB {width: 100%; display: flex; flex-wrap: wrap;}
+.infoBoxB {width: calc(33% - 10px); margin-right: 10px; display: flex; flex-wrap: wrap;}
+
+.short {width: 100%; position: relative; cursor: pointer;}
+.short img {display: block; width: 100%; opacity: .8; padding: 10px;}
+.short:hover .caption, .short:hover, .long:hover .caption, .long:hover {opacity: 1;}
+
+.long {width: 100%; position: relative; cursor: pointer;}
+.long img {display: block; width: 100%; opacity: .8; padding: 10px;}
+
+.caption {position: absolute; top: 10%; left: 10%; width: 80%; height: 80%; background: rgba(255, 255, 255, .8); opacity: 0; transition: .5s;}
+.captionText {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; transition: .5s;}
+.smallText {color: #444; font-size: 1.3rem; font-weight: bold;}
+.line {border: 2px solid #5d5c5c; width: 25%; margin: 15px auto;}
+.captionText span:last-child {font-size: 1.2rem; color: #555;}
+.imgBottom {margin-bottom: 10px;}
+
+#boxB button {padding: 20px 50px; border: none; border-radius: 25px; margin: 60px auto 100px; box-shadow: 5px 5px 5px #bbbaba; color: #939292; transition: .3s;}
+#boxB button:hover {box-shadow: none;}
+
+/* section C */
+#secC {width: 100%; height: 700px; position: relative; background: #eee;}
+.sideBtBox {width: 1260px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.left {left: 0;}
+.right {right: 0;}
+
+#slideBoxC {width: 100%; max-width: 1200px; margin: 0 auto; position: relative; height: 480px; overflow: hidden;}
+#secC h2 {padding-top: 60px; font-size: 2rem; text-align: center;}
+.sideBt {position: absolute; top: 50%; transform: translateY(-50%); font-size: 3em; border: none; background: none; color: #bbbaba; font-weight: 600; z-index: 20;}
+
+.boxC {width: 100%; max-width: 1200px; display: flex; flex-wrap: wrap; justify-content: center; margin: 0 auto; position: absolute; top: 60%; transform: translateY(-60%);}
+.boxC:last-child {right: -100%;}
+
+.infoBoxC {width: 33%; display: flex; flex-wrap: wrap; justify-content: center;}
+.infoBoxC img {padding: 0 50px; width: 100%; display: block;}
+.infoBoxC h3 {width: 100%; text-align: center; padding: 20px 0 4px; color: #5d5c5c; font-size: 1.3rem;}
+.infoBoxC p {width: 100%; text-align: center; color: #939292;}
+
+#slideMarkC {display: flex; width: 100%; justify-content: center; position: absolute; bottom: 10%;}
+.markC {width: 15px; height: 15px; border-radius: 100%; border: none; background: #d8d8d8; margin: 0 5px;}
+.markC:first-child {background: #9E9E9E;}
+
+/* section D */
+#secD {background: url(../img/water-drop-384649_1280.jpg) no-repeat; background-position: center; background-size: cover; background-attachment: fixed; position: relative;}
+#secD h2 {width: 100%; text-align: center; padding-bottom: 60px; color: #fff;}
+
+.boxD {width: 100%; padding: 75px 0; background: rgba(255, 255, 255, .2);}
+.infoBoxD {width: 100%; max-width: 1200px; display: flex; flex-wrap: wrap; margin: 0 auto; padding: 0 40px; color: #fff;}
+.textBox {width: 50%; font-size: .9rem;}
+.textBoxIcon {padding-right: 10px;}
+.textBox p {margin: 20px 0;}
+.socialIcon {font-size: 25px; padding-right: 5px; margin-top: 20px; font-size: 1.8rem;}
+
+.serciveBox {width: 50%;}
+.service {width: 100%; padding: 5px 10px; margin-bottom: 10px; background: none; border: none; border-bottom: 1px solid #fff; color: #fff; outline: none; font-family: 'Noto Sans', sans-serif;}
+.serciveBox textarea {border: 1px solid #fff;}
+.submitBt {padding: 12px 36px; border: none; border-radius: 25px; background: #cbcbcb; float: right; color: #383838; margin-top: 8px; transition: .3s;}
+.submitBt:hover {background: #eee;}
+input::placeholder, textarea::placeholder {color: #fff; font-style: italic; font-family: 'Noto Sans', sans-serif;}
+
+/* footer */
+#foot {width: 100%; height: 80px; background: #383838; color: #939393; display: flex; justify-content: center; align-items: center; font-size: 12px;}
+
+/* scroll top button */
+#scrollTopBt {width: 100%; display: none; position: fixed; z-index: 40; bottom: 0; padding: 20px; font-size: 2em; color: #6d6d6d;}
+.scrollTopIcon {cursor: pointer; float: right;}
